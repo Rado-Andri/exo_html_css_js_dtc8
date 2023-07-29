@@ -1,9 +1,16 @@
-fetch("https://jsonplaceholder.typicode.com/users")
+
+//ajout du lien
+fetch("https://jsonplaceholder.typicode.com/users") 
     .then(res => res.json())
     .then(users => {
         let columnsHtml = "<div class='user-columns'>";
         users.forEach((element, index) => {
-            let imagePath = `./photo_users/${index + 1}.jpg`; // Chemin d'accès à l'image correspondant à l'utilisateur
+            // Chemin d'accès à l'image correspondant à l'utilisateur
+            // affichage des photos telechargee
+            let imagePath = `./photo_users/${index + 1}.jpg`; 
+
+            //les donnees json vers html
+            //affichage
             let column = `
                 <div class='user-column'>
                     <img src='${imagePath}' alt='${element.username}' >
