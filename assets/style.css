@@ -1,0 +1,51 @@
+/* CSS pour le design "user persona" en colonnes */
+
+/* Réinitialisation des marges et des rembourrages pour la liste des utilisateurs */
+.user-container {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Classe pour envelopper les colonnes */
+.user-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Classe pour chaque colonne d'utilisateur */
+.user-column {
+  max-width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Style pour les images d'utilisateur */
+.user-column img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+/* Style pour les en-têtes de colonne */
+.user-column h2 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+/* Style pour les informations de chaque utilisateur */
+.user-column p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+/* Style pour le conteneur principal de la page */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 100% de la hauteur de la fenêtre visible */
+}
